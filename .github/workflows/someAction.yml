@@ -9,6 +9,8 @@ jobs:
       - name: Check pwd
         run: |
           pwd
+          cd folderA
+          cat fileA.txt
       - uses: actions/checkout@v1
       - name: Check folderA
         run: |
