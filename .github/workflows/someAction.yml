@@ -1,0 +1,22 @@
+name: CI
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Check folderA
+        run: |
+          pwd
+          cd folderA
+          cat fileA.txt
+      - name: Check folderB
+        run: |
+          pwd 
+          cd folderB
+          cat fileB.txt
+
+
+
