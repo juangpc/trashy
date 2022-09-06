@@ -6,12 +6,15 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Check pwd
+      - name: Check pre
         run: |
           pwd
-          cd folderA
-          cat fileA.txt
+          ls -la
       - uses: actions/checkout@v1
+      - name: Check post
+        run: |
+          pwd
+          ls -la
       - name: Check folderA
         run: |
           pwd
