@@ -1,1 +1,2 @@
 fileB
+new line here too

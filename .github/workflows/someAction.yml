@@ -6,6 +6,9 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Check pwd
+        run: |
+          pwd
       - uses: actions/checkout@v1
       - name: Check folderA
         run: |
